@@ -1,0 +1,28 @@
+@import "bootstrap.scss";
+.no-table {
+    border: none !important;
+  
+}
+.no-table th { 
+    line-height: 18px;
+    padding-top: 7px;
+    text-align: left;
+    padding-bottom: 7px;
+}
+.no-table td { 
+    line-height: 18px;
+    padding-top: 7px;
+    text-align: left;
+    padding-bottom: 7px;
+}
+@import "fg.scss";
+@import "my.scss";
+@import "style.scss";
+@import "slides.scss";
+// @import "td_style.scss";
+@import "blitzer/jquery-ui-1.8.17.custom.scss";
+.no-table img {
+    margin-bottom: 0px !important;
+    margin-bottom: 0px !important;
+    vertical-align: middle !important;
+}

@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title>Бюро отпусков</title>
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <link href="/css/screen.css" rel="stylesheet">
+        <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
+        <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+    </head>
+    <body>
+        
+<div class="topbar" data-dropdown="dropdown" >
+    <div class="fill">
+        <div class="container">
+            <div class="row show-grid">
+                <div class="span13">
+                    <ul class="nav">
+                        <li class="dropdown"> <a href="#" class="dropdown-toggle">Туры и услуги</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Поиск тура</a></li>
+                                <li><a href="#">Горящие туры</a></li>
+                                <li><a href="#">Заявка на подбор тура</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">Лечение за границей</a></li>
+                                <li><a href="#"><nobr>Авиабилеты и ж/д билеты</nobr></a></li>
+                                <li><a href="#">Скидки и подарки</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Горящие туры</a></li>
+                        <li class="dropdown"> <a href="#" class="dropdown-toggle">Для туристов</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Памятка туристам</a></li>
+                                <li><a href="#">Документы в отпуск</a></li>
+                                <li><a href="#">Законы</a></li>
+                                <li><a href="#"><nobr>Способы бронирования туров</nobr></a></li>
+                                <li><a href="#">Как оплатить туры?</a></li>
+                                <li><a href="#">Виды туризма</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">Частые вопросы</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown"> <a href="#" class="dropdown-toggle">Компания</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">О компании</a></li>
+                                <li><a href="#">Где купить туры?</a></li>
+                                <li><a href="#"><nobr>Почему с нами хорошо отдыхать?</nobr></a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">Информация для туроператоров</a></li>
+                                <li><a href="#">Работа в турфирме</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Скидки и подарки</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="span3 bo-topbar-buttons">
+                    <button data-controls-modal="modal-login" data-backdrop="true" data-keyboard="true" class="btn small">Вход</button>
+                    &nbsp;
+                    <button data-controls-modal="modal-reg" data-backdrop="true" data-keyboard="true" class="btn small">Регистрация</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+        <div class="container">
+            
+<div class="bo-wrapper"> <br>
+    <div class="row">
+      <div class="span4">
+        <div class="bo-offset"><a href="/"><img src="/img/logo.png"></a></div>
+      </div>
+      <div class="span6">
+        <h3>Где купить туры в Петербурге?</h3>
+        <p><span class="label">(812)</span> <span class="bo-top-phone">643-34-94</span> <small>(много линий)</small><br>
+          <a  href="#" class="bo-callback-link" data-controls-modal="modal-callback" data-backdrop="true" data-keyboard="true">заказать обратный звонок</a></p>
+        <p><a href="#" class="bo-link-decor">Адрес офиса турфирмы</a></p>
+      </div>
+      <div class="span6">
+        <div class="bo-subscribe-block">
+          <h3>Подписаться на горящие туры</h3>
+          <form action="/" method="post">
+            <input class="span2"  name="email" type="text" placeholder="@"/>
+            <button type="submit" class="btn danger">Хочу туры и акции!</button>
+          </form>
+        </div>
+        <!-- Добавление в закладки start -->
+        <div class="bo-share">
+          <div style="float:left;">рассказать всем:&nbsp;&nbsp;</div>
+          <div class="addthis_toolbox addthis_default_style "> <a class="addthis_button_facebook"> </a> <a class="addthis_button_google_plusone" g:plusone:annotation="none" g:plusone:size="small" style="position:relative; display:inline-block;"> </a> <a class="addthis_button_preferred_2" style="cursor:pointer;" tw:count="none"> </a> <a class="addthis_button_livejournal" style="cursor:pointer;" title="написать в ЖЖ"> </a> <a class="addthis_button_vk" style="cursor:pointer;" title="рассказать в контакте"> </a> <a class="addthis_button_my.ya.ru" style="cursor:pointer;" title="поделиться на Я.ру"> </a> <a class="addthis_button_more" href="http://www.addthis.com/bookmark.php?v=250&username=ra-4d6a2f606b99b10b"> </a> </div>
+        </div>
+        <!-- Добавление в закладки end --> 
+      </div>
+    </div>
+            
+<div class="bo-offset">
+    <h6 class="bo">Поиск тура онлайн</h6>
+</div>
+<div class="bo-mainsearh">
+      <form action="/" method="post">
+        <div class="row">
+          <div class="span4">
+            <div class="bo-offset">
+              <h4>Откуда и куда?</h4>
+            </div>
+            <hr class="divider">
+            <div class="bo-offset">
+              <div>
+                <label for="from_city" class="bo-label">Отсюда</label>
+                <select name="from_city" id="from_city" class="span2-5">
+                  <option>Петербург</option>
+                  <option>Москва</option>
+                </select>
+              </div>
+              <br>
+              <div>
+                <label for="to_city" class="bo-label">туда</label>
+                <select id="to_city" name="to_city" class="span2-5">
+                  <option>Австралия</option>
+                  <option>Австрия</option>
+                  <option>Тенерифе</option>
+                  <option>Италия</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="span4">
+            <h4>Когда и насколько?</h4>
+            <hr class="divider">
+            <div>
+              <label for="date_from" class="bo-label">Улететь с</label>
+              <input class="span1-5" id="date_from" name="date_from" type="text" placeholder="25.01.11"/>&nbsp;&nbsp;по  &nbsp;&nbsp;<input class="span1-5" id="date_to" name="date_to" type="text" placeholder="08.02.11"/>
+            </div>
+            <br>
+            <div>
+              <label for="nights" class="bo-label">на срок</label>
+              <select name="nights" id="nights" class="span3">
+                <option>1 неделя</option>
+                <option>5-7 ночей</option>
+              </select>
+            </div>
+          </div>
+          <div class="span4">
+            <h4>Кто и в какой отель?</h4>
+            <hr class="divider">
+            <div>
+              <label for="room" class="bo-label">В номер</label>
+              <select name="room" id="room" class="span3">
+                <option>1 взрослый</option>
+                <option>2 взрослых</option>
+              </select>
+            </div>
+            <br>
+            <div>
+              <label for="hotel" class="bo-label">В отель</label>
+              <select name="hotel" id="hotel" class="span3">
+                <option>от 1 звезды</option>
+                <option>от 2 звезд</option>
+              </select>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a  href="#" class="bo-callback-link">указать название отеля</a> </div>
+          </div>
+          <div class="span4">
+            <h4>Деньги и еда?</h4>
+            <hr class="divider">
+            <div>
+              <select name="price" id="price" class="span3">
+                <option>цена не важна</option>
+                <option>от 10.000 до 30.000 руб. за всех</option>
+              </select>
+            </div>
+            <br>
+            <div>
+              <select name="eat" id="eat" class="span3">
+                <option>любое питание</option>
+                <option>только завтрак</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <br>
+        <div align="center">
+          <button type="submit" class="btn success large">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Найти туры!&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
+        </div>
+      </form>
+    </div>
+            <div class="row">
+                <div class="span5">
+                    
+<div class="bo-offset">
+    <h3>Не подобрать тур?</h3>
+    <p>Мы найдем лучшие туры и свяжемся с вами.</p>
+    <button  data-controls-modal="modal-tourquery" data-backdrop="true" data-keyboard="true" class="btn success">Оставьте заявку</button>
+</div>
+                    <br />
+                     
+                    <br />
+                    
+<div class="bo-well bo-offset">
+	<div class="bo-offset">
+		<h6>страны</h6>
+		<ul class="unstyled">
+			<li><span class="b-fg b-fg_TR"><img src="/img/fg.png"/></span> <a href="#" class="bo-country-link bo-link-decor">Турция</a><br>
+				<span  class="bo-flag-offset"><a href="#" class="bo-country-sublink bo-link-decor">туры</a>, <a href="#" class="bo-country-sublink bo-link-decor">отели</a>, <a href="#" class="bo-country-sublink bo-link-decor">курорты</a></span></li>
+			<li><span class="b-fg b-fg_GR"><img src="/img/fg.png"/></span> <a href="#" class="bo-country-link bo-link-decor">Греция</a><br>
+				<span  class="bo-flag-offset"><a href="#" class="bo-country-sublink bo-link-decor">туры</a>, <a href="#" class="bo-country-sublink bo-link-decor">отели</a>, <a href="#" class="bo-country-sublink bo-link-decor">курорты</a></span></li>
+			<li><span class="b-fg b-fg_EG"><img src="/img/fg.png"/></span> <a href="#" class="bo-country-link bo-link-decor">Египет</a><br>
+				<span  class="bo-flag-offset"><a href="#" class="bo-country-sublink bo-link-decor">туры</a>, <a href="#" class="bo-country-sublink bo-link-decor">отели</a>, <a href="#" class="bo-country-sublink bo-link-decor">курорты</a></span></li>
+			<li><span class="b-fg b-fg_TH"><img src="/img/fg.png"/></span> <a href="#" class="bo-country-link bo-link-decor">Тайланд</a><br>
+				<span  class="bo-flag-offset"><a href="#" class="bo-country-sublink bo-link-decor">туры</a>, <a href="#" class="bo-country-sublink bo-link-decor">отели</a>, <a href="#" class="bo-country-sublink bo-link-decor">курорты</a></span></li>
+			<li><span class="b-fg b-fg_CY"><img src="/img/fg.png"/></span> <a href="#" class="bo-country-link bo-link-decor">Кипр</a><br>
+				<span  class="bo-flag-offset"><a href="#" class="bo-country-sublink bo-link-decor">туры</a>, <a href="#" class="bo-country-sublink bo-link-decor">отели</a>, <a href="#" class="bo-country-sublink bo-link-decor">курорты</a></span></li>
+			<li><span class="b-fg b-fg_ES"><img src="/img/fg.png"/></span> <a href="#" class="bo-country-link bo-link-decor">Испания</a><br>
+				<span  class="bo-flag-offset"><a href="#" class="bo-country-sublink bo-link-decor">туры</a>, <a href="#" class="bo-country-sublink bo-link-decor">отели</a>, <a href="#" class="bo-country-sublink bo-link-decor">курорты</a></span></li>
+			<li><span class="b-fg b-fg_IT"><img src="/img/fg.png"/></span> <a href="#" class="bo-country-link bo-link-decor">Италия</a><br>
+				<span  class="bo-flag-offset"><a href="#" class="bo-country-sublink bo-link-decor">туры</a>, <a href="#" class="bo-country-sublink bo-link-decor">отели</a>, <a href="#" class="bo-country-sublink bo-link-decor">курорты</a></span></li>
+			<li><span class="b-fg b-fg_CU"><img src="/img/fg.png"/></span> <a href="#" class="bo-country-link bo-link-decor">Куба</a><br>
+				<span  class="bo-flag-offset"><a href="#" class="bo-country-sublink bo-link-decor">туры</a>, <a href="#" class="bo-country-sublink bo-link-decor">отели</a>, <a href="#" class="bo-country-sublink bo-link-decor">курорты</a></span></li>
+			<li><span class="b-fg b-fg_AE"><img src="/img/fg.png"/></span> <a href="#" class="bo-country-link bo-link-decor">ОАЭ</a><br>
+				<span  class="bo-flag-offset"><a href="#" class="bo-country-sublink bo-link-decor">туры</a>, <a href="#" class="bo-country-sublink bo-link-decor">отели</a>, <a href="#" class="bo-country-sublink bo-link-decor">курорты</a></span></li>
+			<li><span class="b-fg b-fg_BR"><img src="/img/fg.png"/></span> <a href="#" class="bo-country-link bo-link-decor">Бразилия</a><br>
+				<span  class="bo-flag-offset"><a href="#" class="bo-country-sublink bo-link-decor">туры</a>, <a href="#" class="bo-country-sublink bo-link-decor">отели</a>, <a href="#" class="bo-country-sublink bo-link-decor">курорты</a></span></li>
+			<li><span class="b-fg b-fg_TR"><img src="/img/fg.png"/></span> <a href="#" class="bo-country-link bo-link-decor">Великобритания</a><br>
+				<span  class="bo-flag-offset"><a href="#" class="bo-country-sublink bo-link-decor">туры</a>, <a href="#" class="bo-country-sublink bo-link-decor">отели</a>, <a href="#" class="bo-country-sublink bo-link-decor">курорты</a></span></li>
+			<li><span class="b-fg b-fg_TR"><img src="/img/fg.png"/></span> <a href="#" class="bo-country-link bo-link-decor">Иордания</a><br>
+				<span  class="bo-flag-offset"><a href="#" class="bo-country-sublink bo-link-decor">туры</a>, <a href="#" class="bo-country-sublink bo-link-decor">отели</a>, <a href="#" class="bo-country-sublink bo-link-decor">курорты</a></span></li>
+			<li><span class="b-fg b-fg_TR"><img src="/img/fg.png"/></span> <a href="#" class="bo-country-link bo-link-decor">Маврикий</a><br>
+				<span  class="bo-flag-offset"><a href="#" class="bo-country-sublink bo-link-decor">туры</a>, <a href="#" class="bo-country-sublink bo-link-decor">отели</a>, <a href="#" class="bo-country-sublink bo-link-decor">курорты</a></span></li>
+			<li><span class="b-fg b-fg_TR"><img src="/img/fg.png"/></span> <a href="#" class="bo-country-link bo-link-decor">Мальдивы</a><br>
+				<span  class="bo-flag-offset"><a href="#" class="bo-country-sublink bo-link-decor">туры</a>, <a href="#" class="bo-country-sublink bo-link-decor">отели</a>, <a href="#" class="bo-country-sublink bo-link-decor">курорты</a></span></li>
+			<li><span class="b-fg b-fg_TR"><img src="/img/fg.png"/></span> <a href="#" class="bo-country-link bo-link-decor">Швейцария</a><br>
+				<span  class="bo-flag-offset"><a href="#" class="bo-country-sublink bo-link-decor">туры</a>, <a href="#" class="bo-country-sublink bo-link-decor">отели</a>, <a href="#" class="bo-country-sublink bo-link-decor">курорты</a></span></li>
+			<li><span class="b-fg b-fg_TR"><img src="/img/fg.png"/></span> <a href="#" class="bo-country-link bo-link-decor">Мексика</a><br>
+				<span  class="bo-flag-offset"><a href="#" class="bo-country-sublink bo-link-decor">туры</a>, <a href="#" class="bo-country-sublink bo-link-decor">отели</a>, <a href="#" class="bo-country-sublink bo-link-decor">курорты</a></span></li>
+			<li><span class="b-fg b-fg_TR"><img src="/img/fg.png"/></span> <a href="#" class="bo-country-link bo-link-decor">Сейшелы</a><br>
+				<span  class="bo-flag-offset"><a href="#" class="bo-country-sublink bo-link-decor">туры</a>, <a href="#" class="bo-country-sublink bo-link-decor">отели</a>, <a href="#" class="bo-country-sublink bo-link-decor">курорты</a></span></li>
+			<li><span class="b-fg b-fg_TR"><img src="/img/fg.png"/></span> <a href="#" class="bo-country-link bo-link-decor">Франция</a><br>
+				<span  class="bo-flag-offset"><a href="#" class="bo-country-sublink bo-link-decor">туры</a>, <a href="#" class="bo-country-sublink bo-link-decor">отели</a>, <a href="#" class="bo-country-sublink bo-link-decor">курорты</a></span></li>
+			<li><span class="b-fg b-fg_TR"><img src="/img/fg.png"/></span> <a href="#" class="bo-country-link bo-link-decor">Чехия</a><br>
+				<span  class="bo-flag-offset"><a href="#" class="bo-country-sublink bo-link-decor">туры</a>, <a href="#" class="bo-country-sublink bo-link-decor">отели</a>, <a href="#" class="bo-country-sublink bo-link-decor">курорты</a></span></li>
+			<li><span class="b-fg b-fg_TR"><img src="/img/fg.png"/></span> <a href="#" class="bo-country-link bo-link-decor">Китай</a><br>
+				<span  class="bo-flag-offset"><a href="#" class="bo-country-sublink bo-link-decor">туры</a>, <a href="#" class="bo-country-sublink bo-link-decor">отели</a>, <a href="#" class="bo-country-sublink bo-link-decor">курорты</a></span></li>
+			<li><span class="b-fg b-fg_TR"><img src="/img/fg.png"/></span> <a href="#" class="bo-country-link bo-link-decor">Финляндия</a><br>
+				<span  class="bo-flag-offset"><a href="#" class="bo-country-sublink bo-link-decor">туры</a>, <a href="#" class="bo-country-sublink bo-link-decor">отели</a>, <a href="#" class="bo-country-sublink bo-link-decor">курорты</a></span></li>
+			<li><span class="b-fg b-fg_TR"><img src="/img/fg.png"/></span> <a href="#" class="bo-country-link bo-link-decor">Индия</a><br>
+				<span  class="bo-flag-offset"><a href="#" class="bo-country-sublink bo-link-decor">туры</a>, <a href="#" class="bo-country-sublink bo-link-decor">отели</a>, <a href="#" class="bo-country-sublink bo-link-decor">курорты</a></span></li>
+			<li><span class="b-fg b-fg_TR"><img src="/img/fg.png"/></span> <a href="#" class="bo-country-link bo-link-decor">Шри-Ланка</a><br>
+				<span  class="bo-flag-offset"><a href="#" class="bo-country-sublink bo-link-decor">туры</a>, <a href="#" class="bo-country-sublink bo-link-decor">отели</a>, <a href="#" class="bo-country-sublink bo-link-decor">курорты</a></span></li>
+		</ul>
+		<div class="bo-offset">&nbsp;<a href="#" class="btn">все страны &raquo;</a></div>
+		<br>
+	</div>
+</div>
+                    <br />
+                    
+<div class="bo-offset">
+    <div class="bo-banners"><a class="bo-banner_1" href="#"><span>Египет!</span> Снова в продаже!</a></div>
+    <br>
+    <div class="bo-banners"><a class="bo-banner_2" href="#"><span>Классическая</span> Чехия и Австрия!</a></div>
+    <br>
+    <div class="bo-banners"><a class="bo-banner_3" href="#"><span>Испания.</span> Виллы</a></div>
+    <br>
+    <div class="bo-banners"><a class="bo-banner_4" href="#"><span>Weekend</span> в Израиле</a></div>
+</div>
+                    <br />
+                </div>
+                <div class="span11">
+                    
+<div class="bo-well bo-offset-right">
+	<div class="bo-offset">
+		<h3>Популярные туры из Санкт-Петербурга</h3>
+	</div>
+	<div class="bo-well-bg">
+		<div class="bo-offset"><a href="#" class="bo-link-decor bo-link-subcolor">экскурсионные туры</a>, <a href="#" class="bo-link-decor bo-link-subcolor">лечение за границей</a>, <a href="#" class="bo-link-decor bo-link-subcolor">круизы</a>, <a href="#" class="bo-link-decor bo-link-subcolor">туры по Европе</a>, <a href="#" class="bo-link-decor bo-link-subcolor">туры в Скандинавию</a></div>
+	</div>
+	<br>
+	<div class="bo-search-by-countries bo-offset">
+		<ul class="unstyled">
+			<li><a href="#" title="Австрия">Австрия</a> от 21.170 р.<br>
+			</li>
+			<li><a href="#" title="Болгария">Болгария</a> от 16.721 р.<br>
+			</li>
+			<li><a href="#" title="Бразилия">Бразилия</a> от 195.971 р.<br>
+			</li>
+			<li><a href="#" title="Великобритания">Великобритания</a> от 30.069 р.<br>
+			</li>
+			<li><a href="#" title="Венгрия">Венгрия</a> от 22.955 р.<br>
+			</li>
+			<li><a href="#" title="Вьетнам">Вьетнам</a> от 46.024 р.<br>
+			</li>
+			<li class="important"><a href="#" title="Греция">Греция</a> от 7.964 р.<br>
+				<span class="label warning">популярное направление</span> </li>
+			<li><a href="#" title="Дания">Дания</a> от 17.713 р.<br>
+			</li>
+			<li class="important"><a href="#" title="Египет">Египет</a> от 9.777 р.<br>
+				<span class="label warning">популярное направление</span> </li>
+			<li><a href="#" title="Израиль">Израиль</a> от 25.648 р.<br>
+			</li>
+		</ul>
+		<ul class="unstyled">
+			<li><a href="#" title="Индия">Индия</a> от 37.721 р.<br>
+			</li>
+			<li><a href="#" title="Индонезия">Индонезия</a> от 47.923 р.<br>
+			</li>
+			<li><a href="#" title="Иордания">Иордания</a> от 24.939 р.<br>
+			</li>
+			<li class="important"><a href="#" title="Испания">Испания</a> от 19.413 р.<br>
+			</li>
+			<li><a href="#" title="Италия">Италия</a> от 14.340 р.<br>
+			</li>
+			<li class="important"><a href="#" title="Кипр">Кипр</a> от 8.049 р.<br>
+				<span class="label warning">популярное направление</span> </li>
+			<li><a href="#" title="Китай">Китай</a> от 118.915 р.<br>
+			</li>
+			<li><a href="#" title="Куба">Куба</a> от 39.591 р.<br>
+			</li>
+			<li><a href="#" title="Маврикий">Маврикий</a> от 52.457 р.<br>
+			</li>
+			<li><a href="#" title="Малайзия">Малайзия</a> от 66.826 р.<br>
+			</li>
+		</ul>
+		<ul class="unstyled">
+			<li><a href="#" title="Мальдивы">Мальдивы</a> от 40.583 р.<br>
+			</li>
+			<li><a href="#" title="Мальта">Мальта</a> от 18.506 р.<br>
+			</li>
+			<li><a href="#" title="Марокко">Марокко</a> от 14.255 р.<br>
+			</li>
+			<li><a href="#" title="Мексика">Мексика</a> от 57.020 р.<br>
+			</li>
+			<li><a href="#" title="Нидерланды">Нидерланды</a> от 31.486 р.<br>
+			</li>
+			<li><a href="#" title="ОАЭ">ОАЭ</a> от 14.340 р.<br>
+			</li>
+			<li><a href="#" title="Сейшелы">Сейшелы</a> от 51.607 р.<br>
+			</li>
+			<li><a href="#" title="Словения">Словения</a> от 33.753 р.<br>
+			</li>
+			<li class="important"><a href="#" title="Тайланд">Тайланд</a> от 26.470 р.<br>
+			</li>
+			<li class="important"><a href="#" title="Тунис">Тунис</a> от 14.453 р.<br>
+			</li>
+		</ul>
+	</div>
+</div><br>
+
+<div class="bo-well bo-offset-right">
+    <div class="bo-offset">
+        <h2 class="bo-hot">Горящие туры</h2>
+    </div>
+    <div class="bo-well-bg">
+        <div class="bo-offset" style="padding-bottom: 10px;">
+            <form action="/" method="post">
+                <input class="span4 error" id="email" name="email" size="16" type="text" placeholder="@"/>
+                <button type="submit" class="btn">Подписаться на горящие туры и акции!</button>
+            </form>
+        </div>
+    </div>
+    <table class="zebra-striped bo-hot-table" id="sortTableExample">
+    <thead>
+        <tr>
+            <th width="27%" class="orange">Куда</th>
+            <th width="27%" class="orange">Когда и насколько</th>
+            <th width="27%" class="orange">Отель</th>
+            <th width="19%" class="orange">Стоимость</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><a href="#" class="bo-link-decor">Тур в Мексику</a><br>
+            Канкун, п-ов Юкатан, Карибское побережье</td>
+            <td>Заезд 22 декабря <br>
+            на 10 ночей</td>
+            <td>Dos Playas <nobr>3<sup><img src="/img/hotel-star.png"></sup></td>
+            <td><span class="bo-hot-price">85.000 р.</span> <span class="label">за 2 взрослых</span></td>
+        </tr>
+        <tr>
+            <td><a href="#" class="bo-link-decor">Тур в Тайланд</a><br>
+            Паттайя</td>
+            <td>Заезд 11 января <br>
+            на 14 ночей</td>
+            <td>Royal Cliff Beach Hotel <nobr>5<sup><img src="/img/hotel-star.png"></sup></td>
+            <td><span class="bo-hot-price">81.000 р.</span> <span class="label">за 2 взрослых</span></td>
+        </tr>
+        <tr>
+            <td><a href="#" class="bo-link-decor">Тур в Египет</a><br>
+              Хургада</td>
+            <td>Заезд 17 января <br>
+              на 7 ночей</td>
+            <td>Express Hrg <nobr>5<sup><img src="/img/hotel-star.png"></sup></nobr></td>
+            <td><span class="bo-hot-price">32.000 р.</span> <span class="label">за 2 взрослых</span></td>
+        </tr>
+        <tr>
+            <td><a href="#" class="bo-link-decor">Тур в ОАЭ</a><br>
+              Шарджа</td>
+            <td>Заезд 22 января <br>
+              на 12 ночей</td>
+            <td>Al Busten Hotels Flats <nobr>4<sup><img src="/img/hotel-star.png"></sup></td>
+            <td><span class="bo-hot-price">24.000 р.</span> <span class="label">за 2 взрослых</span></td>
+        </tr>
+        <tr>
+            <td><a href="#" class="bo-link-decor">Тур в Мексику</a><br>
+              Канкун, п-ов Юкатан, Карибское побережье</td>
+            <td>Заезд 22 декабря <br>
+              на 10 ночей</td>
+            <td>Dos Playas <nobr>3<sup><img src="/img/hotel-star.png"></sup></td>
+            <td><span class="bo-hot-price">76.000 р.</span> <span class="label">за 2 взрослых</span></td>
+        </tr>
+        <tr>
+            <td><a href="#" class="bo-link-decor">Тур в Тайланд</a><br>
+              Паттайя</td>
+            <td>Заезд 11 января <br>
+              на 14 ночей</td>
+            <td>Royal Cliff Beach Hotel <nobr>5<sup><img src="/img/hotel-star.png"></sup></td>
+            <td><span class="bo-hot-price">97.000 р.</span> <span class="label">за 2 взрослых</span></td>
+        </tr>
+        <tr>
+            <td><a href="#" class="bo-link-decor">Тур в Египет</a><br>
+              Хургада</td>
+            <td>Заезд 17 января <br>
+              на 7 ночей</td>
+            <td>Express Hrg <nobr>5<sup><img src="/img/hotel-star.png"></sup></td>
+            <td><span class="bo-hot-price">49.000 р.</span> <span class="label">за 2 взрослых</span></td>
+        </tr>
+        <tr>
+            <td><a href="#" class="bo-link-decor">Тур в ОАЭ</a><br>
+              Шарджа</td>
+            <td>Заезд 22 января <br>
+              на 12 ночей</td>
+            <td>Al Busten Hotels Flats <nobr>4<sup><img src="/img/hotel-star.png"></sup></td>
+            <td><span class="bo-hot-price">28.000 р.</span> <span class="label">за 2 взрослых</span></td>
+        </tr>
+    </tbody>
+  </table>
+</div><br>
+
+<div class="bo-well bo-offset-right">
+    <div class="bo-offset bo-offset-right">
+        <h3>Туры в Египет из Санкт-Петербурга</h3>
+        <img src="/img/tury-v-egipet.jpg" class="bo-img">
+        <p>Отдых в&nbsp;Египте это качественный и&nbsp;доступный отдых в&nbsp;стране с&nbsp;уникальным климатом, который позволяет отдохнуть под теплым солнцем, на&nbsp;чистейших и&nbsp;широких пляжах, круглый год. В&nbsp;этой стране очень развита туристическая индустрия, поэтому не&nbsp;удивляйтесь высоким уровнем сервиса, комфортными отелями, разнообразными программами отдыха, когда отправитесь в&nbsp;горящие туры в&nbsp;Египет из&nbsp;<nobr>Санкт-Петербурга</nobr> и&nbsp;все это предоставляется вам по&nbsp;достаточно низким ценам, которые будут доступны практически каждому, а&nbsp;если вы&nbsp;купите горящие туры в&nbsp;Египет, то&nbsp;сможете ещё больше сэкономить. </p>
+        <img src="/img/tury-v-egipet2.jpg" class="bo-img">
+        <p><b>Туры в&nbsp;Египет из&nbsp;<nobr>Санкт-Петербурга</nobr></b> дадут возможность вам отдохнуть на&nbsp;солнечных пляжах Красного моря, заняться дайвингом и&nbsp;увидеть своими глазами всю красоту подводного мира, который здесь необычайно красив. Кроме того, туры в&nbsp;Египет из&nbsp;<nobr>Санкт-Петербурга</nobr> дадут вам возможность отдохнуть в&nbsp;стране, в&nbsp;которой солнце светит ярко круглый год, по&nbsp;улицам разъезжают на&nbsp;верблюдах, вместо привычных деревьев на&nbsp;улицах растут пальмы, в&nbsp;море плавают стаи дельфинов и&nbsp;повсюду песок. Ведь 96% территории Египта это пустыня, которая притягивает к&nbsp;себе своей загадочностью. Увидеть заход солнца в&nbsp;завораживающей пустыне среди песков и&nbsp;дюн дорогого стоит. </p>
+        <p><br />
+            Также, отправляясь в&nbsp;тур в&nbsp;Египет, не&nbsp;стоит забывать о&nbsp;встречи с&nbsp;такими&nbsp;древнейшими постройками, как Большой Сфинкс, Луксорский храм, пирамида Хеопса. Эта пирамида, кстати, единственное из&nbsp;&laquo;Семи чудес света&raquo; сохранившееся до&nbsp;наших дней. Не&nbsp;упустите возможность увидеть это своими глазами и&nbsp;прикоснуться к&nbsp;древнейшим памятникам Египта, которые стоят уже не&nbsp;одно тысячелетие. Это действительно потрясающее ощущение оказаться рядом с&nbsp;такими историческими памятниками, которые запомнятся надолго. </p>
+        <h4>Курортные города Египта</h4>
+        <p>Одни из&nbsp;самых известных курортных мест в&nbsp;Египте это <i>Хургада</i> и&nbsp;<i><nobr>Шарм-эль-Шейх</nobr></i>. В&nbsp;<i>Хургаде</i> сегодня большое количество хороших отелей, развлекательных центров и&nbsp;чистейший пляж. Он&nbsp;развивается очень большими темпами, ведь туристический сезон здесь продолжается весь год. <i><nobr>Шарм-эль-Шейх</nobr></i> является самым популярным курортом в&nbsp;Египте. Здесь есть все для того чтобы вы&nbsp;смогли хорошо отдохнуть. <i><nobr>Шарм-эль-Шейх</nobr></i> знаменит тем, что вдоль пляжной линии тянутся красивейшие коралловые рифы, поэтому погружения под воду здесь дарят туристам, которые выбирают горящие туры в&nbsp;Египет из&nbsp;<nobr>Санкт-Петербурга</nobr> много незабываемых впечатлений.</p>
+    </div>
+</div>
+<br>
+<div class="bo-well bo-offset-right">
+    <div class="bo-offset bo-offset-right">
+        <h3>Туры по Европе</h3>
+        <img src="/img/tury-po-evrope.jpg" class="bo-img">
+        <p>С&nbsp;давних времен всех нас привлекала тихая и&nbsp;красочная бытность Европы. Многие люди еще с&nbsp;детства мечтают погрузиться в&nbsp;ту&nbsp;прекрасную эпоху рыцарей и&nbsp;великолепных дам. И&nbsp;теперь, когда вы&nbsp;<nobr>все-таки</nobr> решились на&nbsp;посещение той или иной страны, будет очень печально, если ваше счастье омрачат <nobr>какие-либо</nobr> мелочи. Наша компания предлагает лучшие и&nbsp;самые интересные туры по&nbsp;Европе из&nbsp;<nobr>Санкт-Петербурга</nobr>. Все что вам остается&nbsp;&mdash; это выбрать лучший тур для вас и&nbsp;ваших близких. Главным преимуществом является то, что возможно гибкое расписание экскурсий и&nbsp;отелей. Все ваши пожелания будут учитываться. </p>
+        <img src="/img/tury-po-evrope2.jpg" class="bo-img">
+        <p><b>Туры по&nbsp;Европе</b> от&nbsp;турфирмы &laquo;Бюро отпусков&raquo;&nbsp;&mdash; это гарантия на&nbsp;комфортабельный и&nbsp;приятный отдых! Ведь мы&nbsp;на&nbsp;протяжении долгого времени предлагаем туры по&nbsp;Европе<i></i> и&nbsp;способны предугадывать все возможные загвоздки в&nbsp;комфортном отдыхе. Наши туры по&nbsp;Европе организованы с&nbsp;таким расчетом, что любой даже самый искушенный турист найдет для себя <nobr>что-то</nobr> новое и&nbsp;удивительное! Только представьте, что выбрав тур во&nbsp;Францию, вы&nbsp;сможете за&nbsp;несколько дней увидеть то, что создавалось множество тысяч лет. В&nbsp;тур входит как посещение Эйфелевой башни, так и&nbsp;все знаменитые замки придворных особ, где до&nbsp;сих пор сохранен колорит тех времен. </p>
+        <p><b>Круизные туры по&nbsp;Европе</b>&nbsp;&mdash; это в&nbsp;первую очередь, уникальная возможность одновременно побывать в&nbsp;разных странах и&nbsp;познать их&nbsp;культуру и&nbsp;позагорать на&nbsp;белоснежном лайнере. Ни&nbsp;для кого не&nbsp;секрет, что если вы&nbsp;задумали оздоровить свой организм, то&nbsp;лучшего тура, чем в&nbsp;Европу, вам не&nbsp;найти. В&nbsp;связи, с&nbsp;этим мы&nbsp;предлагаем лечебные туры по&nbsp;Европе. В&nbsp;наше время большим спросом пользуются <nobr>спа-отели</nobr>. Мы&nbsp;готовы предложить еще множество туров, где есть возможность отдохнуть индивидуально, не&nbsp;набирая большой группы. </p>
+        <p><b>Туры по&nbsp;Европе из&nbsp;<nobr>Санкт-Петербурга</nobr></b> пользуются большой популярностью среди туристов.</p>
+    </div>
+</div>
+<br>
+<div class="bo-well bo-offset-right">
+    <div class="bo-offset bo-offset-right">
+        <h3>Туры в Тайланд из Санкт-Петербурга</h3>
+        <img src="/img/tury-v-tailand.jpg" class="bo-img">
+        <p>Если вы&nbsp;хотите посетить одну из&nbsp;самых экзотических стран в&nbsp;Азии, то&nbsp;<b>туры в&nbsp;Тайланд из&nbsp;<nobr>Санкт-Петербурга</nobr></b> это действительно для вас. В&nbsp;этой стране туристический сезон круглый год, поэтому вы&nbsp;сможете хорошо отдохнуть на&nbsp;белоснежных пляжах, покататься на&nbsp;слонах, посетить древние храмы и&nbsp;памятники, крокодиловые фермы, парк бабочек, сходить на&nbsp;тайский массаж, в&nbsp;любое время года. </p>
+        <p> Экзотические растения и&nbsp;белоснежный песок создают особую атмосферу на&nbsp;пляжах Тайланда, которая удовлетворит все запросы любителей хорошего пляжного отдыха. Для любознательных здесь организуют интереснейшие экскурсии по&nbsp;древним храма и&nbsp;памятникам Тайланда, поэтому, отправившись в&nbsp;горящие туры в&nbsp;Тайланд из&nbsp;<nobr>Санкт-Петербурга</nobr>, вы&nbsp;узнаете много нового о&nbsp;истории, культуре и&nbsp;традициях этой необыкновенной страны.<br />
+            <br />
+            <img src="/img/tury-v-tailand2.jpg" class="bo-img"> Достойный уровень сервиса обеспечивают отели Тайланда, за&nbsp;вполне небольшую плату. В&nbsp;Тайланде вы&nbsp;сможете попробовать разнообразные морепродукты и&nbsp;посетить роскошные рестораны. Отдохнуть хорошо вечером в&nbsp;ночных клубах, барах или на&nbsp;специально организованных дискотеках. Кроме этого, купив горящие туры в&nbsp;Тайланд, вы&nbsp;увидите настоящие непроходимые джунгли, которые полны экзотическими растениями и&nbsp;животными. </p>
+        <h4>Курорты Тайланда</h4>
+        <p>Одним из&nbsp;самых известных пляжных курортов, на&nbsp;который отправляются наши туристы, покупая горящие туры в&nbsp;Тайланд из&nbsp;<nobr>Санкт-Петербурга</nobr>, является <i>Паттайя</i>. Здесь вы&nbsp;сможете заняться дайвингом, виндсерфингом, покататься на&nbsp;водных лыжах, посетить интереснейшие экскурсии. Самым лучшим курортом в&nbsp;Тайланде считается <i>остров Пхукет</i>. Здесь есть все для хорошего отдыха. На&nbsp;этом острове находится всегда многолюдный и&nbsp;веселый пляж Patong Beach. Хорошо развитым туристичеким курортом является <i>остров Самуи</i>. Здесь вы&nbsp;найдете большое количество разнообразных развлечений и&nbsp;белоснежные пляжи.</p>
+    </div>
+</div>
+<br> 
+                </div>
+            </div>
+        </div>
+        
+<footer>
+    <div class="row">
+        <div class="span4">
+            <div class="bo-offset"><a href="#"  class="bo-link-decor">Компания</a><br>
+                <a href="#"  class="bo-link-decor">Все горящие туры</a></div>
+            </div>
+            <div class="span4"><a href="#"  class="bo-link-decor">Туры по Европе</a><br>
+                <a href="#"  class="bo-link-decor">Туры в Скандинавию</a>
+            </div>
+            <div class="span4"><a href="#"  class="bo-link-decor">Услуги турфирмы</a><br>
+                <a href="#"  class="bo-link-decor">Подарки, скидки, акции</a>
+            </div>
+            <div class="span4"><a href="#"  class="bo-link-decor">Туристам</a><br>
+                <a href="#"   class="bo-link-decor">Виды туризма</a>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="row">
+            <div class="span-one-third">
+                <div class="bo-offset">
+                    <p>&copy; 2009-2012 ООО «Бюро Отпусков»</p>
+                </div>
+            </div>
+            <div class="span-one-third">
+                <p><span class="label">(812)</span> <span class="bo-top-phone">643-34-94</span> <small>(много линий)</small><br>
+                <a  href="#" class="bo-callback-link" data-controls-modal="modal-callback" data-backdrop="true" data-keyboard="true">заказать обратный звонок</a></p>
+            </div>
+            <div class="span-one-third"><a href="mailto:namore@burootpuskov.ru" class="bo-link-decor" >namore@burootpuskov.ru</a><br>
+                <a href="#" class="bo-link-decor" >карта сайта</a>
+            </div>
+        </div>
+    </div>
+  </footer> 
+    </body>
+    
+<!--Логин-->
+<div id="modal-login" class="modal hide fade">
+    <div class="modal-header"> <a href="#" class="close">&times;</a>
+        <h3>Вход в кабинет пользователя</h3>
+    </div>
+    <div class="modal-body">
+        <div class="alert-message error">
+            <p><strong>Вылет отменяется!</strong> Вы не заполнили все поля.</p>
+        </div>
+        <div class="alert-message success">
+            <p><strong>Все ок!</strong> Вот Ваша путевка.</p>
+        </div>
+        <form action="/" method="post">
+            <div class="input">
+                <div class="input-prepend"> <span class="add-on">&nbsp;&nbsp;Почта</span>
+                    <input class="span5" id="email" name="email" size="16" type="text" placeholder="@"/>
+                </div>
+                <br>
+                <div class="input-prepend"> <span class="add-on">Пароль</span>
+                    <input class="span5" id="phone" name="phone" size="16" type="phone" />
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <button type="submit" class="btn success">Войти</button>
+                <button data-controls-modal="modal-reminder" data-backdrop="true" data-keyboard="true"    class="btn default" onClick="$('#modal-login').modal('toggle');">Напомнить пароль</button>
+            </div>
+        </form>
+    </div>
+</div>
+    
+<!--Запрос обратного звонка-->
+<div id="modal-callback" class="modal hide fade">
+    <div class="modal-header"> <a href="#" class="close">&times;</a>
+        <h3>Заказ обратного звонка</h3>
+    </div>
+    <div class="modal-body">
+        <div class="alert-message error">
+            <p><strong>Не существующий номер!</strong> Проверьте введеные данные.</p>
+        </div>
+        <div class="alert-message success">
+            <p><strong>Подымите трубку!</strong> Свои.</p>
+        </div>
+        <form action="/" method="post">
+            <div class="input">
+                <div class="input-prepend"> <span class="add-on">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ваше имя</span>
+                    <input class="span5" id="email" name="email" size="16" type="text"/>
+                </div>
+                <br>
+                <div class="input-prepend"> <span class="add-on">Номер телефона</span>
+                    <input class="span5" id="phone" name="phone" size="16" type="text" />
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <button type="submit" class="btn success">Перезвоните мне</button>
+            </div>
+        </form>
+    </div>
+</div>
+    
+<!--Регистрация пользователя-->
+<div id="modal-reg" class="modal hide fade">
+    <div class="modal-header"> <a href="#" class="close">&times;</a>
+        <h3>Регистрация нового пользователя</h3>
+    </div>
+    <div class="modal-body">
+        <div class="alert-message error">
+            <p><strong>Вылет отменяется!</strong> Вы не заполнили все поля.</p>
+        </div>
+        <div class="alert-message success">
+            <p><strong>Все ок!</strong> Вот Ваша путевка.</p>
+        </div>
+        <form action="/" method="post">
+            <div class="input">
+                <div class="input-prepend"> <span class="add-on">&nbsp;&nbsp;Почта</span>
+                    <input class="span5" id="email" name="email" size="16" type="text" placeholder="@"/>
+                </div>
+                <br>
+                <div class="input-prepend"> <span class="add-on">Пароль</span>
+                    <input class="span5" id="pass" name="pass" size="16" type="text" />
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <button type="submit" class="btn success">Зарегистрироваться</button>
+            </div>
+        </form>
+    </div>
+</div>
+    
+<!--Напомнить пароль-->
+<div id="modal-reminder" class="modal hide fade">
+    <div class="modal-header"> <a href="#" class="close">&times;</a>
+        <h3>Напоминание пароля</h3>
+    </div>
+    <div class="modal-body">
+    <form action="/" method="post">
+        <div class="input">
+            <div class="input-prepend"> <span class="add-on">Почта</span>
+                <input class="span5" id="email" name="email" size="16" type="text" placeholder="@"/>
+            </div>
+        </div>
+        <br>
+        Для восстановления пароля введите указанный при регистрации адрес электронной почты.
+        </div>
+        <div class="modal-footer">
+            <button type="submit" class="btn success">Прислать пароль</button>
+        </div>
+    </form>
+</div>
+    
+<!--Смена бэкграунда-->
+<div class="bo-toggle">
+    <a href="#" data-placement="left" rel='twipsy' title='Включить зиму' onClick="document.body.style.background ='url(/img/bg_winter.jpg)'; document.body.style.backgroundRepeat = 'no-repeat'; document.body.style.backgroundAttachment= 'fixed'; return false;"><img src="/img/snow_flake.png" width="32" height="32"></a><br>
+    <a href="#" title='Включить лето' rel='twipsy' onClick="document.body.style.background ='url(/img/bg_summer.jpg)'; document.body.style.backgroundRepeat = 'no-repeat'; document.body.style.backgroundAttachment= 'fixed'; return false;" data-placement="left"><img src="/img/sun.png" width="32" height="32"></a> <br>
+</div>
+    
+<!--Заявка на подбор тура-->
+<div id="modal-tourquery" class="modal hide fade">
+    <div class="modal-header"> <a href="#" class="close">&times;</a>
+        <h3>Заявка на подбор тура</h3>
+    </div>
+    <div class="modal-body">
+        <div class="alert-message error">
+            <p><strong>Вылет отменяется!</strong> Вы не заполнили все поля.</p>
+        </div>
+        <div class="alert-message success">
+            <p><strong>Все ок!</strong> Вот Ваша путевка.</p>
+        </div>
+        <form action="/" method="post">
+            <div class="input">
+                <div class="input-prepend"> <span class="add-on bo-add-on">Как вас зовут?</span>
+                    <input class="span5" id="name" name="name" size="16" type="text"/>
+                </div>
+                <br>
+                <div class="input-prepend"> <span class="add-on bo-add-on">Номер телефона</span>
+                    <input class="span5" id="phone" name="phone" size="16" type="text" />
+                </div>
+                <br>
+                <div class="input-prepend"> <span class="add-on bo-add-on">Почта</span>
+                    <input class="span5" id="email" name="email" size="16" type="text" placeholder="@"/>
+                </div>
+                <br>
+                <div class="input-prepend"> <span class="add-on bo-add-on">Страны поездки</span>
+                    <input class="span5" id="countries" name="countries" size="16" type="text" />
+                </div>
+                <br>
+                <div class="input-prepend"> <span class="add-on bo-add-on">Даты поездки</span>
+                    <input class="span5" id="dates" name="dates" size="16" type="text" />
+                </div>
+                <br>
+                <div class="input-prepend"> <span class="add-on bo-add-on">Пожелания к туру</span>
+                    <textarea    class="span5" name="" cols="" rows="4"></textarea>
+                </div>
+                <br>
+            </div>
+
+            <div class="modal-footer">
+                <button type="submit" class="btn success">Отправить заявку на подбор тура</button>
+            </div>
+        </form>
+    </div>
+</div>
+    
+<!--Заявка на подбор тура-->
+<div id="modal-sendsms" class="modal hide fade">
+    <div class="modal-header"> <a href="#" class="close">&times;</a>
+        <h3>Меню отправки смс с адресом</h3>
+    </div>
+    <div class="modal-body">
+        <div class="alert-message success">
+            <p><strong>Смс отправлено</strong></p>
+        </div>
+        <form action="/" method="post">
+            <div class="input">
+                <div class="input-prepend"> <span class="add-on">Введите номер</span>
+                    <input class="span5" id="name" name="name" size="16" type="text"/>
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <button type="submit" class="btn success">отправить себе смс</button>
+            </div>
+        </form>
+    </div>
+</div>
+    
+<script type="text/javascript">var addthis_config = {
+    ui_language: "en",
+    ui_click: true,
+    services_custom: {
+        name: "Я.ру",
+        url: "http://my.ya.ru/posts_add_link.xml?URL={{url}}&title={{title}}",
+        icon: "//mrlater.ru/img/ya.png"
+    }
+};</script> 
+<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=xa-4d6a2f606b99b10b"></script> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script>  
+<script src="/js/jquery.tablesorter.min.js"></script> 
+<script src="/js/bootstrap-dropdown.js"></script> 
+<script src="/js/bootstrap-modal.js"></script> 
+<script src="/js/bootstrap-twipsy.js"></script> 
+<script src="/js/bootstrap-popover.js"></script> 
+<script >
+  $(function() {
+    $("table#sortTableExample").tablesorter({ sortList: [[3,0]] });
+  });
+</script> 
+<script>
+            $(function () {
+              $("a[rel=twipsy]").twipsy({
+                live: true
+              })
+            })
+</script>
+<script>
+    $(function() {
+        //$.datepicker.setDefaults( $.datepicker.regional[ "ru" ] );
+        $( "#date_from, #date_to" ).datepicker({
+            numberOfMonths: 2,
+            dateFormat: 'dd.mm.yy',
+            firstDay: 1,
+            monthNames: ['Январь','Февраль','Март','Апрель','Май','Июнь','Июль','Август','Сентябрь','Октябрь','Ноябрь','December'],
+            dayNamesMin: ['Вс', 'Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб'],
+            dayNames: ['Воскресенье', 'Понедельник', 'Вторник', 'Среда', 'Черверг', 'Пятница', 'Суббота'],
+            currentText: 'Сегодня',
+            closeText: 'Готово',
+            showButtonPanel: true
+        });
+    });
+</script>
+<script src="/js/slides.min.jquery.js"></script> 
+<script>
+    $(function(){
+        $("#slides").slides();
+    });
+</script> 
+</html>
+

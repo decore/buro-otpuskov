@@ -1,0 +1,21 @@
+<% @bo_offset = "bo/Напомнить пароль" %>
+<!--Напомнить пароль-->
+<div id="modal-reminder" class="modal hide fade">
+    <div class="modal-header"> <a href="#" class="close">&times;</a>
+        <h3>Напоминание пароля</h3>
+    </div>
+    <div class="modal-body">
+    <form action="/" method="post">
+        <div class="input">
+            <div class="input-prepend"> <span class="add-on">Почта</span>
+                <input class="span5" id="email" name="email" size="16" type="text" placeholder="@"/>
+            </div>
+        </div>
+        <br>
+        Для восстановления пароля введите указанный при регистрации адрес электронной почты.
+        </div>
+        <div class="modal-footer">
+            <button type="submit" class="btn success">Прислать пароль</button>
+        </div>
+    </form>
+</div>

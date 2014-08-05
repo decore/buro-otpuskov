@@ -1,0 +1,31 @@
+<% @bo_offset = "bo/вход" %>
+<!--Логин-->
+<div id="modal-login" class="modal hide fade">
+    <div class="modal-header"> <a href="#" class="close">&times;</a>
+        <h3>Вход в кабинет пользователя</h3>
+    </div>
+    <div class="modal-body">
+        <div class="alert-message error">
+            <p><strong>Вылет отменяется!</strong> Вы не заполнили все поля.</p>
+        </div>
+        <div class="alert-message success">
+            <p><strong>Все ок!</strong> Вот Ваша путевка.</p>
+        </div>
+        <form action="/" method="post">
+            <div class="input">
+                <div class="input-prepend"> <span class="add-on">&nbsp;&nbsp;Почта</span>
+                    <input class="span5" id="email" name="email" size="16" type="text" placeholder="@"/>
+                </div>
+                <br>
+                <div class="input-prepend"> <span class="add-on">Пароль</span>
+                    <input class="span5" id="phone" name="phone" size="16" type="phone" />
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <button type="submit" class="btn success">Войти</button>
+                <button data-controls-modal="modal-reminder" data-backdrop="true" data-keyboard="true"    class="btn default" onClick="$('#modal-login').modal('toggle');">Напомнить пароль</button>
+            </div>
+        </form>
+    </div>
+</div>

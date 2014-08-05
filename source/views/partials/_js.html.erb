@@ -1,0 +1,52 @@
+<% @bo_offset = "bo-ofdfdвыаываfset" %>
+<script type="text/javascript">var addthis_config = {
+    ui_language: "en",
+    ui_click: true,
+    services_custom: {
+        name: "Я.ру",
+        url: "http://my.ya.ru/posts_add_link.xml?URL={{url}}&title={{title}}",
+        icon: "//mrlater.ru/img/ya.png"
+    }
+};</script> 
+<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=xa-4d6a2f606b99b10b"></script> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script>  
+<script src="/js/jquery.tablesorter.min.js"></script> 
+<script src="/js/bootstrap-dropdown.js"></script> 
+<script src="/js/bootstrap-modal.js"></script> 
+<script src="/js/bootstrap-twipsy.js"></script> 
+<script src="/js/bootstrap-popover.js"></script> 
+<script >
+  $(function() {
+    $("table#sortTableExample").tablesorter({ sortList: [[3,0]] });
+  });
+</script> 
+<script>
+            $(function () {
+              $("a[rel=twipsy]").twipsy({
+                live: true
+              })
+            })
+</script>
+<script>
+    $(function() {
+        //$.datepicker.setDefaults( $.datepicker.regional[ "ru" ] );
+        $( "#date_from, #date_to" ).datepicker({
+            numberOfMonths: 2,
+            dateFormat: 'dd.mm.yy',
+            firstDay: 1,
+            monthNames: ['Январь','Февраль','Март','Апрель','Май','Июнь','Июль','Август','Сентябрь','Октябрь','Ноябрь','December'],
+            dayNamesMin: ['Вс', 'Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб'],
+            dayNames: ['Воскресенье', 'Понедельник', 'Вторник', 'Среда', 'Черверг', 'Пятница', 'Суббота'],
+            currentText: 'Сегодня',
+            closeText: 'Готово',
+            showButtonPanel: true
+        });
+    });
+</script>
+<script src="/js/slides.min.jquery.js"></script> 
+<script>
+    $(function(){
+        $("#slides").slides();
+    });
+</script>

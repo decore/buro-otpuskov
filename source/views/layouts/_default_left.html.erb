@@ -1,0 +1,44 @@
+<% @bo_offset = "bo-offset" %>
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title>Бюро отпусков</title>
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <link href="/css/screen.css" rel="stylesheet">
+        <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
+        <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+    </head>
+    <body>
+        <%= render '/partials/topbar' %>
+        <div class="container">
+            <%= render '/partials/bo-wrapper' %>
+            <%= render '/partials/bo-mainsearh' %>
+            <div class="row">
+                <div class="span5">
+                    <%= render '/partials/bo-offset' %>
+                    <br />
+                    <%= yield :submenu %> 
+                    <br />
+                    <%= render '/partials/countries' %>
+                    <br />
+                    <%= render '/partials/banners' %>
+                    <br />
+                </div>
+                <div class="span11">
+                    <%= yield %> 
+                </div>
+            </div>
+        </div>
+        <%= render '/partials/footer' %> 
+    </body>
+    <%= render '/modals/enter' %>
+    <%= render '/modals/callback' %>
+    <%= render '/modals/reg' %>
+    <%= render '/modals/reminder' %>
+    <%= render '/modals/toggle' %>
+    <%= render '/modals/tourquery' %>
+    <%= render '/modals/sendsms' %>
+    <%= render '/partials/js' %> 
+</html>

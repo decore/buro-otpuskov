@@ -1,0 +1,270 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.quick_select_button { 
+	text-decoration:none;
+	color:#423f79;
+	border-bottom:1px dashed #423f79;
+	margin-left:10px;
+	margin-right:10px;
+	font-size:130%;
+}
+
+.quick_select_active { 
+	color:#116e23;
+	border-bottom:3px solid #116e23;
+	margin-left:10px;
+	margin-right:10px;
+	font-size:130%;
+}
+
+.tour_list_pics {
+	border: 1px solid #fecb04;
+	padding: 4px;
+}
+
+.hot_result_color1 {
+	border-left: 4px solid #fff;
+	border-right: 4px solid #fff;
+	background-color:#eff6f1;
+	padding: 4px;
+}
+
+.hot_result_color2 {
+	border-left: 4px solid #fff;
+	border-right: 4px solid #fff;
+	background-color:#faf9f5;
+	padding: 4px;
+}
+
+.hot_result_color1_focus {
+	border-left: 4px solid #fecb04;
+	border-right: 4px solid #fecb04;
+	background-color:#eff6f1;
+	padding: 4px;
+}
+
+.hot_result_color2_focus {
+	border-left: 4px solid #fecb04;
+	border-right: 4px solid #fecb04;
+	background-color:#faf9f5;
+	padding: 4px;
+}
+
+.hot_buy_link {
+	background:url(../img/ticket.png) no-repeat 0 1px;
+	padding: 0 0 0 32px;
+	font-size: 140%;
+	line-height: 32px;
+	display: inline-block;
+	color: #060;
+}
+
+.hot_price {
+	font-size: 130%;
+	color: #060;
+	font-weight: bold;
+}
+
+.hot_mini {
+	font-size: 80%;
+	color: #999;
+}
+
+.hot_black {
+	color: #000;
+}
+
+.hot_black a {
+	color: #000;
+}
+
+.hot_orange {
+	color:#e96c28;
+}
+
+.hot_grey {
+	color:#999;
+}
+
+
+/* TURYY*/
+
+.tur_sort_button { 
+	color:#423f79;
+	margin-left:10px;
+	font-size:130%;
+}
+
+.tur_buy_link {
+	background:url(../img/bag.png) no-repeat 0 1px;
+	padding: 4px 0 0 34px;
+	font-size:140%;
+	line-height:32px;
+	display:inline-block;
+	color:#060;
+}
+
+.malo_mest {
+	position: absolute;
+	width: 267px;
+	height: 20px;
+	background: url(../img/malo_mest_bg.png) repeat-x;
+	text-align: left;
+	padding-left: 10px;
+	margin-top: -29px;
+	margin-left: 9px;
+}
+
+.malo_mest_aiplane {
+	background:url(../img/airplane.png) no-repeat 0 1px;
+	padding: 0 0 0 18px;
+	font-size:85%;
+	line-height:16px;
+	display:inline-block;
+}
+
+.malo_mest_hotel {
+	background:url(../img/home.png) no-repeat 0 1px;
+	padding: 0 0 0 18px;
+	font-size:85%;
+	line-height:16px;
+	display:inline-block;
+}
+
+.card_table_title {
+	border-bottom:solid 1px #ffbb6a;
+	padding: 0 0 3px 5px;
+}
+
+.card_hot_icon {
+	background:url(../img/hot_orange.png) no-repeat 0 1px;
+	padding: 0 0 0 24px;
+	line-height:24px;
+	display:inline-block;
+}
+
+.card_hot_buy_link {
+	background:url(../img/ticket.png) no-repeat 0 1px;
+	padding: 0 0 0 32px;
+	font-size:140%;
+	line-height:32px;
+	display:inline-block;
+	color:#fff;
+}
+
+.card_hot_i {
+	color:#000;
+	padding: 0 0 0 24px;
+	font-style:italic;
+	font-size: 80%;
+	display:inline-block;
+}
+
+.card_info {
+	background:#eff6f1;
+	padding: 7px 24px 7px 24px;
+	vertical-align:top;
+}
+
+.hotel_info {
+	background:#faf9f5;
+	padding: 7px 24px 7px 24px;
+	vertical-align:top;
+}
+
+.mainContent .block_buy_tour {
+	/* margin-top: -2px; */
+	border:1px solid #ffbb6a;
+	border-top:1px solid #fff;
+	height:1%;
+	overflow:hidden;
+	padding:10px 0 0 0;
+	background:#fff;
+}
+
+.card_print {
+	background:url(../img/print.png) no-repeat 0 1px;
+	padding: 0 0 0 26px;
+	line-height:22px;
+	display:inline-block;
+	text-align: right;
+	margin-top: 8px;
+}
+
+.card_table_line {
+	border-bottom: 1px dotted #999;
+	font-size: 95%;
+}
+.card_table_line_1 {
+	border-bottom: 1px dotted #999;
+	padding: 3px;
+	padding-left:7px;
+	color: #000;
+}
+.card_table_noline {
+	padding: 3px;
+	padding-left:7px;
+	color: #000;
+}
+
+.card_price {
+	font-size:170%;
+	color:#060;
+	font-weight:bold;
+}
+
+.card_hotelinfo_icon {
+	background:url(../img/hotelinfo.png) no-repeat 0 1px;
+	padding: 0 0 0 24px;
+	line-height:24px;
+	display:inline-block;
+}
+
+
+.card_hotel_pic {
+	margin-top: -3px; 
+	border: 1px solid #fecb04;
+	padding: 4px;
+}
+
+.card_tur_buy_link {
+	background:url(../img/bag.png) no-repeat 0 1px;
+	padding: 4px 0 0 34px;
+	font-size:140%;
+	line-height:32px;
+	display:inline-block;
+	color:#fff;
+}
+
+.card_tur_i {
+	color:#000;
+	font-style:italic;
+	font-size: 80%;
+	display:inline-block;
+}
+
+.card_malo_mest {
+	width: 267px;
+	height: 20px;
+	background: url(../img/malo_mest_bg.png) repeat-x;
+	text-align: center;
+}
+
+.card_table_rightline {
+	border-right:solid 1px #ffbb6a;
+}
+
+.main_hotel {
+	border:1px solid #abccb5;
+	position: absolute;
+	width: 600px;
+	height: 113px;
+	margin-top: 87px;
+}
+
+.multi_hotel_select {
+	color:#000;
+	background:#faf9f5;
+	padding: 3px 7px 5px 7px;
+}

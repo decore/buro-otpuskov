@@ -1,0 +1,30 @@
+<% @bo_offset = "bo/Запрос обратного звонка" %>
+<!--Запрос обратного звонка-->
+<div id="modal-callback" class="modal hide fade">
+    <div class="modal-header"> <a href="#" class="close">&times;</a>
+        <h3>Заказ обратного звонка</h3>
+    </div>
+    <div class="modal-body">
+        <div class="alert-message error">
+            <p><strong>Не существующий номер!</strong> Проверьте введеные данные.</p>
+        </div>
+        <div class="alert-message success">
+            <p><strong>Подымите трубку!</strong> Свои.</p>
+        </div>
+        <form action="/" method="post">
+            <div class="input">
+                <div class="input-prepend"> <span class="add-on">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ваше имя</span>
+                    <input class="span5" id="email" name="email" size="16" type="text"/>
+                </div>
+                <br>
+                <div class="input-prepend"> <span class="add-on">Номер телефона</span>
+                    <input class="span5" id="phone" name="phone" size="16" type="text" />
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <button type="submit" class="btn success">Перезвоните мне</button>
+            </div>
+        </form>
+    </div>
+</div>

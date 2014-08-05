@@ -1,0 +1,91 @@
+<% @bo_offset = "bo-offset/поиск" %>
+<div class="bo-offset">
+    <h6 class="bo">Поиск тура онлайн</h6>
+</div>
+<div class="bo-mainsearh">
+      <form action="/" method="post">
+        <div class="row">
+          <div class="span4">
+            <div class="bo-offset">
+              <h4>Откуда и куда?</h4>
+            </div>
+            <hr class="divider">
+            <div class="bo-offset">
+              <div>
+                <label for="from_city" class="bo-label">Отсюда</label>
+                <select name="from_city" id="from_city" class="span2-5">
+                  <option>Петербург</option>
+                  <option>Москва</option>
+                </select>
+              </div>
+              <br>
+              <div>
+                <label for="to_city" class="bo-label">туда</label>
+                <select id="to_city" name="to_city" class="span2-5">
+                  <option>Австралия</option>
+                  <option>Австрия</option>
+                  <option>Тенерифе</option>
+                  <option>Италия</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="span4">
+            <h4>Когда и насколько?</h4>
+            <hr class="divider">
+            <div>
+              <label for="date_from" class="bo-label">Улететь с</label>
+              <input class="span1-5" id="date_from" name="date_from" type="text" placeholder="25.01.11"/>&nbsp;&nbsp;по  &nbsp;&nbsp;<input class="span1-5" id="date_to" name="date_to" type="text" placeholder="08.02.11"/>
+            </div>
+            <br>
+            <div>
+              <label for="nights" class="bo-label">на срок</label>
+              <select name="nights" id="nights" class="span3">
+                <option>1 неделя</option>
+                <option>5-7 ночей</option>
+              </select>
+            </div>
+          </div>
+          <div class="span4">
+            <h4>Кто и в какой отель?</h4>
+            <hr class="divider">
+            <div>
+              <label for="room" class="bo-label">В номер</label>
+              <select name="room" id="room" class="span3">
+                <option>1 взрослый</option>
+                <option>2 взрослых</option>
+              </select>
+            </div>
+            <br>
+            <div>
+              <label for="hotel" class="bo-label">В отель</label>
+              <select name="hotel" id="hotel" class="span3">
+                <option>от 1 звезды</option>
+                <option>от 2 звезд</option>
+              </select>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a  href="#" class="bo-callback-link">указать название отеля</a> </div>
+          </div>
+          <div class="span4">
+            <h4>Деньги и еда?</h4>
+            <hr class="divider">
+            <div>
+              <select name="price" id="price" class="span3">
+                <option>цена не важна</option>
+                <option>от 10.000 до 30.000 руб. за всех</option>
+              </select>
+            </div>
+            <br>
+            <div>
+              <select name="eat" id="eat" class="span3">
+                <option>любое питание</option>
+                <option>только завтрак</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <br>
+        <div align="center">
+          <button type="submit" class="btn success large">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Найти туры!&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
+        </div>
+      </form>
+    </div>

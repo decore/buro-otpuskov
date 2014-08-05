@@ -1,0 +1,47 @@
+<% @bo_offset = "bo/Заявка на подбор тура" %>
+<!--Заявка на подбор тура-->
+<div id="modal-tourquery" class="modal hide fade">
+    <div class="modal-header"> <a href="#" class="close">&times;</a>
+        <h3>Заявка на подбор тура</h3>
+    </div>
+    <div class="modal-body">
+        <div class="alert-message error">
+            <p><strong>Вылет отменяется!</strong> Вы не заполнили все поля.</p>
+        </div>
+        <div class="alert-message success">
+            <p><strong>Все ок!</strong> Вот Ваша путевка.</p>
+        </div>
+        <form action="/" method="post">
+            <div class="input">
+                <div class="input-prepend"> <span class="add-on bo-add-on">Как вас зовут?</span>
+                    <input class="span5" id="name" name="name" size="16" type="text"/>
+                </div>
+                <br>
+                <div class="input-prepend"> <span class="add-on bo-add-on">Номер телефона</span>
+                    <input class="span5" id="phone" name="phone" size="16" type="text" />
+                </div>
+                <br>
+                <div class="input-prepend"> <span class="add-on bo-add-on">Почта</span>
+                    <input class="span5" id="email" name="email" size="16" type="text" placeholder="@"/>
+                </div>
+                <br>
+                <div class="input-prepend"> <span class="add-on bo-add-on">Страны поездки</span>
+                    <input class="span5" id="countries" name="countries" size="16" type="text" />
+                </div>
+                <br>
+                <div class="input-prepend"> <span class="add-on bo-add-on">Даты поездки</span>
+                    <input class="span5" id="dates" name="dates" size="16" type="text" />
+                </div>
+                <br>
+                <div class="input-prepend"> <span class="add-on bo-add-on">Пожелания к туру</span>
+                    <textarea    class="span5" name="" cols="" rows="4"></textarea>
+                </div>
+                <br>
+            </div>
+
+            <div class="modal-footer">
+                <button type="submit" class="btn success">Отправить заявку на подбор тура</button>
+            </div>
+        </form>
+    </div>
+</div>
